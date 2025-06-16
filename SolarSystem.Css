@@ -1,0 +1,81 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url(Galaxybg.jpg);
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.axis{
+    border: 3px solid white;
+    border-radius: 50%;
+    position: absolute;
+}
+.Sun{
+height: 190px;
+width: 190px;
+background-image: url(Sun.png);
+background-size: cover;
+border: transparent;
+animation: 11s planets infinite linear;
+}
+.First{
+    height: 260px;
+    width: 260px;
+    animation: 8s planets infinite linear;
+}
+.second{
+    height: 420px;
+    width: 420px;
+    animation: 10s planets infinite linear;
+}
+.third{
+    height: 590px;
+    width: 590px;
+    animation: 15s planets infinite linear;
+}
+.First img{
+    height: 70px;
+    width: 70px;
+    animation: 8s move infinite linear;
+}
+.second img{
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 20px;
+    left: 4%;
+    animation: 8s move infinite linear;
+}
+.third img{
+    height: 80px;
+    width: 80px;
+position: relative;
+top: -40px;
+left: 30%;
+animation: 8s move infinite linear;
+}
+@keyframes move{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes planets{
+    form{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
